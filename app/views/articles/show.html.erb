@@ -1,0 +1,4 @@
+<div class="container mt-5">
+<h2><%= @article.title %> <%= link_to "✏️", edit_article_path %> <%= link_to "🗑️", article_path(@article.id),  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></h2>
+<p><%= @article.content %></p>
+</div>
